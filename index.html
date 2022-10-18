@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Grid Layout</title>
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -13,13 +13,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main>
+    <main class="cards grid-layout">
       <!-- Cards -->
-      <article>
-        <div>
-          <i class="fa-brands fa-slack"></i>
+      <article class="cards__article-one">
+        <div class="flex">
+          <i class="fa-brands fa-slack fa-2x"></i>
           <div>
             <h6>4 October 2022</h6>
             <h3>16:20</h3>
@@ -28,47 +30,47 @@
 
         <div>
           <h1>HELLO: I AM MASE 👀 LOGO + BRAND IDENTITY DESIGNER PROBABLY.</h1>
-          <p>
+          <div class="cards__socials">
             <ul>
               <li>BEHANCE</li>
               <li>DRIBBLE</li>
               <li>INSTAGRAM</li>
             </ul>
-            <ul>
+            <ul class="cards__last-ul">
               <li>EMAIL</li>
               <li>TELEGRAM</li>
             </ul>
-          </p>
+          </div>
         </div>
       </article>
-      <article>
-        <img src="./images/1.jpg" alt="random art">
+      <article class="cards__article-two">
+        <img src="./images/1.jpg" alt="random art" width="400">
       </article>
-      <article>
+      <article class="cards__article-three">
         <h2>MIRROR DIGITAL</h2>
       </article>
-      <article>
-        <img src="./images/2.jpg" alt="random art">
+      <article class="cards__article-four">
+        <img src="./images/2.jpg" alt="random art" width="500">
       </article>
-      <article>
+      <article class="cards__article-five flex">
         <div>ONLINE</div>
         <i class="fa-solid fa-plus"></i>
       </article>
-      <article>
-        <img src="./images/3.jpg" alt="random art">
+      <article class="cards__article-six">
+        <img src="./images/3.jpg" alt="random art" width="500">
       </article>
-      <article>
+      <article class="cards__article-seven">
         <h4>THIS PAGE ISN'T READY YET</h4>
         <button>OKAY</button>
       </article>
-      <article>
-        <img src="./images/4.jpg" alt="random art">
+      <article class="cards__article-eight">
+        <img src="./images/4.jpg" alt="random art" width="500">
       </article>
-      <article>
-        <img src="./images/5.jpg" alt="random art">
+      <article class="cards__article-nine">
+        <img src="./images/5.jpg" alt="random art" width="500">
       </article>
-      <article>
-        <img src="./images/6.jpg" alt="random art">
+      <article class="cards__article-ten">
+        <img src="./images/6.jpg" alt="random art" width="500">
       </article>
     </main>
   </body>
