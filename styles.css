@@ -129,3 +129,11 @@ body{
   overflow: hidden;
   background-color: #fff;
 }
+.btn{
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.9rem;
+}
+/* MEDIA QUERIES */
