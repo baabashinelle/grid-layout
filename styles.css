@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
+/*change grid cols to grid area */
+
 *,
 ::before,
 ::after {
