@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
-/*change grid cols to grid area */
-
 *,
 ::before,
 ::after {
@@ -20,7 +18,7 @@ body {
 }
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(14, 1fr);
   gap: 0.2rem;
   width: 60rem;
@@ -38,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  grid-column: 1/4;
+  grid-column: 1/6;
   grid-row: 1/10;
   padding-inline: 20px;
   padding-block: 20px;
@@ -62,7 +60,7 @@ body {
 }
 .cards__article-two {
   grid-row: 1/5;
-  grid-column: 4/6;
+  grid-column: 6/8;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
@@ -72,14 +70,14 @@ body {
   justify-content: center;
   align-items: center;
   grid-row: 5/7;
-  grid-column: 4/6;
+  grid-column: 6/8;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
 }
 .cards__article-four {
   grid-row: 7/10;
-  grid-column: 4/6;
+  grid-column: 6/8;
   border-radius: 0.9rem;
   overflow: hidden;
 }
@@ -88,7 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   grid-row: 1/2;
-  grid-column: 6/7;
+  grid-column: 8/9;
 }
 .cards__article-five div {
   width: 100%;
@@ -103,13 +101,13 @@ body {
 .cards__article-five button {
   border-radius: 50%;
   font-size: x-large;
-  width: 35%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
   background-color: rgb(102, 252, 102);
 }
 .cards__article-six {
   grid-row: 2/5;
-  grid-column: 6/7;
+  grid-column: 8/9;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
@@ -121,7 +119,7 @@ body {
   align-items: center;
   text-align: center;
   grid-row: 5/10;
-  grid-column: 6/7;
+  grid-column: 8/9;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
@@ -135,14 +133,14 @@ body {
 }
 .cards__article-nine {
   grid-row: 10/15;
-  grid-column: 3/5;
+  grid-column: 3/6;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
 }
 .cards__article-ten {
   grid-row: 10/15;
-  grid-column: 5/7;
+  grid-column: 6/9;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
