@@ -154,13 +154,13 @@ body {
 }
 
 /* MEDIA QUERIES */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .grid-layout {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
-  .cards__article-one {
-    grid-column: 1/3;
-    grid-row: auto;
+  /* .cards__article-one {
+    grid-column: auto;
+
   }
   .cards__article-two {
     grid-column: auto;
@@ -188,5 +188,5 @@ body {
   }
   .cards__article-ten {
     grid-column: auto;
-  }
-} */
+  } */
+}
