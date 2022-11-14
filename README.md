@@ -1,2 +1,2 @@
 # grid-layout
-Grid practice :)
+Grid layout practice :)
