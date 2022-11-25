@@ -16,13 +16,15 @@ body {
   font-size: 16px;
   background-color: #000;
 }
+img {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.2rem;
   width: 60rem;
-  height: 42rem;
   background-color: #000;
 }
 .flex {
@@ -36,8 +38,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  grid-column: 1/6;
-  grid-row: 1/10;
   padding-inline: 20px;
   padding-block: 20px;
   border-radius: 0.9rem;
@@ -59,8 +59,6 @@ body {
   align-self: flex-end;
 }
 .cards__article-two {
-  grid-row: 1/5;
-  grid-column: 6/8;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
@@ -69,15 +67,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row: 5/7;
-  grid-column: 6/8;
+  height: 10rem;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
 }
 .cards__article-four {
-  grid-row: 7/10;
-  grid-column: 6/8;
   border-radius: 0.9rem;
   overflow: hidden;
 }
@@ -85,8 +80,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row: 1/2;
-  grid-column: 8/9;
+  height: 3rem;
 }
 .cards__article-five div {
   width: 100%;
@@ -106,8 +100,6 @@ body {
   background-color: rgb(102, 252, 102);
 }
 .cards__article-six {
-  grid-row: 2/5;
-  grid-column: 8/9;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
@@ -118,29 +110,22 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-row: 5/10;
-  grid-column: 8/9;
+  height: 10rem;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
 }
 .cards__article-eight {
-  grid-row: 10/15;
-  grid-column: 1/3;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
 }
 .cards__article-nine {
-  grid-row: 10/15;
-  grid-column: 3/6;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
 }
 .cards__article-ten {
-  grid-row: 10/15;
-  grid-column: 6/9;
   border-radius: 0.9rem;
   overflow: hidden;
   background-color: #fff;
@@ -154,39 +139,53 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
   .grid-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    height: 42rem;
   }
-  /* .cards__article-one {
-    grid-column: auto;
-
+  .cards__article-one {
+    grid-column: 1/6;
+    grid-row: 1/10;
   }
   .cards__article-two {
-    grid-column: auto;
+    grid-row: 1/5;
+    grid-column: 6/8;
   }
   .cards__article-three {
-    grid-column: auto;
+    grid-row: 5/7;
+    grid-column: 6/8;
+    height: unset;
   }
   .cards__article-four {
-    grid-column: auto;
+    grid-row: 7/10;
+    grid-column: 6/8;
   }
   .cards__article-five {
-    grid-column: auto;
+    grid-row: 1/2;
+    grid-column: 8/9;
+    height: unset;
   }
   .cards__article-six {
-    grid-column: auto;
+    grid-row: 2/5;
+    grid-column: 8/9;
   }
   .cards__article-seven {
-    grid-column: auto;
+    grid-row: 5/10;
+    grid-column: 8/9;
+    height: unset;
   }
   .cards__article-eight {
-    grid-column: auto;
+    grid-row: 10/15;
+    grid-column: 1/3;
   }
   .cards__article-nine {
-    grid-column: auto;
+    grid-row: 10/15;
+    grid-column: 3/6;
   }
   .cards__article-ten {
-    grid-column: auto;
-  } */
+    grid-row: 10/15;
+    grid-column: 6/9;
+  }
 }
