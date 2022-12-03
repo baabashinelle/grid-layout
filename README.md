@@ -1,2 +1,2 @@
 # grid-layout
-Grid layout practice :)
+Grid layout practice with vanilla CSS :)
